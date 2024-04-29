@@ -1,4 +1,4 @@
 name = input("Hello, whats your name?")
-board_size = int(input("please choose board size:"))
-number_of_mines = input("Michael, for board size 9, choose number of mines to allocate:")
+board_size = int(input("Michael, please choose board size:"))
+number_of_mines = int(input("Michael, for board size 9, choose number of mines to allocate:"))
 print("Michael, the board size is: 9, number of mines is: 7. ENJOY!")
