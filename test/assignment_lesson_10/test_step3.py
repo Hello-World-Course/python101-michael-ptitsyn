@@ -14,7 +14,6 @@ class TestUi(AssignmentTester):
             pass
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_1_name(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
@@ -25,7 +24,6 @@ class TestUi(AssignmentTester):
         self.assertEqualWithMessage(real_result, expected_result, msg=message)
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_1_name_2(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
@@ -36,7 +34,6 @@ class TestUi(AssignmentTester):
         self.assertEqualWithMessage(real_result, expected_result, msg=message)
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_1_name_3(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
@@ -47,7 +44,6 @@ class TestUi(AssignmentTester):
         self.assertEqualWithMessage(real_result, expected_result, msg=message)
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_2_board_size_1(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
@@ -58,7 +54,6 @@ class TestUi(AssignmentTester):
         self.assertEqualWithMessage(real_result, expected_result, msg=message)
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_2_board_size_2(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
@@ -69,7 +64,6 @@ class TestUi(AssignmentTester):
         self.assertEqualWithMessage(real_result, expected_result, msg=message)
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_2_board_size_3(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
@@ -80,7 +74,6 @@ class TestUi(AssignmentTester):
         self.assertEqualWithMessage(real_result, expected_result, msg=message)
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_3_number_of_mines_1(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
@@ -91,7 +84,6 @@ class TestUi(AssignmentTester):
         self.assertEqualWithMessage(real_result, expected_result, msg=message)
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_3_number_of_mines_2(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
@@ -102,7 +94,6 @@ class TestUi(AssignmentTester):
         self.assertEqualWithMessage(real_result, expected_result, msg=message)
 
     @devin_test_decorator
-    @mock.patch('builtins.input', side_effect=['Dan', '9', '40'])
     def test_3_number_of_mines_3(self, mock_input, message):
         # test
         import project.ui.user_interaction as user_interaction
