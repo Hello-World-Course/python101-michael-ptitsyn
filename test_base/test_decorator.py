@@ -54,12 +54,16 @@ def get_imports(func):
 
 
 def devin_test_decorator(func):
-    imports = get_imports(func)
+    try:
+        imports = get_imports(func)
+        file_path = imports[0]
+    except Exception as e:
+        file_path = "UNKNOWN"
     try:
         test_code = get_test_code(func)
     except Exception as e:
         test_code = ""
-    message = Message(file=imports[0], test_code=test_code)
+    message = Message(file=file_path, test_code=test_code)
 
     @wraps(func)
     def wrapper(self, *args, **kwargs):
