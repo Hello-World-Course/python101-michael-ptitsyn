@@ -1,2 +1,3 @@
 def parse_cmd(command: str):
-    return command.split(" ")
+    cmd, *args = command.split(" ")
+    return cmd, args
