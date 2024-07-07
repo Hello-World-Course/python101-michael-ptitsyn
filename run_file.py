@@ -1,4 +1,5 @@
-import project.ui.user_interaction as user_interaction
-expected_result = False
-real_result = user_interaction.is_number_of_mines_valid(5, 0)
-print(real_result)
+from project.board.board_functions import create_empty_board
+from project.ui.board_ui import draw_board
+
+
+print(draw_board(create_empty_board(9, "S")))
