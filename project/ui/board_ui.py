@@ -11,4 +11,4 @@ def draw_board(board):
     return board_str
 
 def convert_coords(location):
-    return int(location[:-1])-1, ord(location[-1])-ord('A')
+    return int(location[:-1]), ord(location[-1])-ord('A')
